@@ -57,12 +57,45 @@
                 <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <p></p>
+        
                         <button class="modal-close" data-modal-close>
                             <svg class="button-icon">
                                 <use href="./image/icons.svg#icon-Vector-close"></use>
                             </svg>
                         </button>
+
+                        <form class="form js-speaker-form">
+                            <b>Оставьте свои данные, мы вам перезвоним</b>
+
+                            <div class="form-field" role="group" >
+                               
+                                <label for="name">Имя</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+
+                            <div class="form-field" role="group">
+                                <label for="tel">Телефон</label>
+                                <input type="tel" name="tel" id="tel">
+                            </div>
+
+                            <div class="form-field" role="group">
+                                <label for="mail">Почта</label>
+                                <input type="email" name="mail" id="mail">
+                            </div>
+
+                            <div class="form-comment" role="group">
+                                <label for="comment">Коментарий</label>
+                                <textarea name="comment" id="comment" rows="15" placeholder="Введите текст"></textarea>
+                            </div>
+
+                           <div class="form-checkbox" role="group">
+                                <input type="checkbox" name="policy" id="policy">
+                                <label for="policy"><span>Соглашаюсь на рассылку и принимаю</span> <a class="checkbox-link" href="">Условия договора</a></label>
+                           </div>
+                            
+                            <button class="form-button" type="submit">Отправить</button>
+
+                        </form>
                     </div>
                 </div>
             </div>
