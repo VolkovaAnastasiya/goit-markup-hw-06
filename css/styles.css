@@ -550,6 +550,7 @@ img {
 .icon-link {
   width: 20px;
   height: 20px;
+
   fill: var(--fill-icon-color);
   transition-property: fill;
   transition-duration: 250ms;
@@ -837,8 +838,9 @@ b {
 }
 .form-field {
   margin-bottom: 10px;
+  position: relative;
 }
-.form-field label,
+.form-label,
 .form-comment label {
   margin-bottom: 4px;
   font-size: 12px;
@@ -846,12 +848,44 @@ b {
   letter-spacing: 0.01em;
   color: var(--primari-text-color);
 }
-.form-field input {
+
+.form-input {
+  position: relative;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 11px 12px;
   height: 40px;
+  margin: 0;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.form-input:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.form-input:hover ~ .icon-form {
+  fill: var(--accent-color);
+}
+
+.icon-form {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  padding: 3px;
+
+  top: 50%;
+  left: 12px;
+
+  display: inline-block;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  fill: var(--title-text-color);
+}
+
 .form-comment {
   margin-bottom: 20px;
 }
