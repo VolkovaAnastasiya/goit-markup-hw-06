@@ -72,7 +72,7 @@
                                 <label class="form-label" for="name">Имя</label>
                                 <input class="form-input" type="text" name="name" id="name" placeholder=" ">
                                 <svg class="icon-form">
-                                    <use href="./image/icons.svg#icon-name-1"></use>
+                                    <use href="./image/icons.svg#icon-person"></use>
                                 </svg>
                             </div>
 
@@ -80,7 +80,7 @@
                                 <label class="form-label" for="tel">Телефон</label>
                                 <input class="form-input" type="tel" name="tel" id="tel" placeholder=" ">
                                 <svg class="icon-form" width="18" height="18">
-                                    <use href="./image/icons.svg#icon-tel-1"></use>
+                                    <use href="./image/icons.svg#icon-phone"></use>
                                 </svg>
                             </div>
 
@@ -88,7 +88,7 @@
                                 <label class="form-label" for="mail">Почта</label>
                                 <input class="form-input" type="email" name="mail" id="mail" placeholder=" ">
                                 <svg class="icon-form">
-                                    <use href="./image/icons.svg#icon-email-1"></use>
+                                    <use href="./image/icons.svg#icon-email"></use>
                                 </svg>
                             </div>
 
@@ -98,9 +98,18 @@
                             </div>
 
                            <div class="form-checkbox" role="group">
-                                <input type="checkbox" name="policy" id="policy">
-                                <label class="form-label" for="policy"><span>Соглашаюсь на рассылку и принимаю</span> <a class="checkbox-link" href="">Условия договора</a></label>
-                           </div>
+                                
+
+                                <label class="policy" for="policy">
+                                    <input class="checkbox" type="checkbox" id="policy" name="policy">
+                                    <span class="icon-checkbox">
+                                        <svg class="icon-check" id="policy width=" 16px" height="15px">
+                                            <use href="./image/icons.svg#icon-check"></use>
+                                        </svg>
+                                    </span>
+                                    Соглашаюсь на рассылку и принимаю <a class="checkbox-link" href=""> Условия договора</a> 
+                                </label>
+                            </div>
                             
                             <button class="form-button" type="submit">Отправить</button>
 
@@ -414,7 +423,7 @@
                 </div>
 
                <div class="botton-link ">
-                    <p class="link-title">Присоединяйтесь</p>
+                    <p class="link-title">ПРИСОЕДИНЯЙТЕСЬ</p>
                     <ul class="footer-box">
                         <li class="footer-list">
                             <a href="" class="footer-link" aria-label="">
@@ -446,6 +455,20 @@
                         </li>
                     </ul>
                </div>
+               <label class="footer-mail" name="footer-mail" >
+                   <span class="footer-label">ПОДПИШИТЕСЬ НА РАССЫЛКУ</span>
+                    <div class="mail-box">
+                        <input class="footer-input" type="email" placeholder="E-mail">
+                        <button class="footer-submit" type="submit">Подписаться
+                            <svg class="icon-footer">
+                                <use href="./image/icons.svg#icon-send-1"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    
+               </label>
+
 
             </div>
         </footer>
