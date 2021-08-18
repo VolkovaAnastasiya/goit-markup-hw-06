@@ -713,6 +713,7 @@ a.partners:hover .icon-logo {
 }
 
 .footer.container {
+  align-items: baseline;
   display: flex;
 }
 .link-title,
@@ -792,9 +793,8 @@ a.partners:hover .icon-logo {
 }
 .modal-close {
   position: absolute;
-  right: 0;
-  top: 0;
-  margin: 8px;
+  right: 8px;
+  top: 8px;
   cursor: pointer;
 
   width: 30px;
@@ -826,9 +826,7 @@ b {
   margin-bottom: 12px;
 }
 .form {
-  min-width: 528px;
-  min-height: 581px;
-  margin: 40px;
+  padding: 40px;
 }
 .form-field,
 .form-comment {
@@ -902,26 +900,26 @@ b {
   letter-spacing: 0.01em;
   outline: none;
   caret-color: var(--title-text-color);
+  cursor: pointer;
 }
 .form-comment textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+.form-comment textarea:hover {
+  border: 1px solid var(--accent-color);
 }
 
 textarea:focus {
   color: var(--title-text-color);
 }
 
-.form-checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-}
 
 .policy {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
   min-width: 400px;
   font-size: 14px;
   line-height: 1.71;
