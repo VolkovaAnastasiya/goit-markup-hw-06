@@ -720,6 +720,11 @@ a.partners:hover .icon-logo {
 .footer-label {
   margin-bottom: 20px;
   color: var(--primari-white-color);
+
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
 }
 .footer-box {
   display: flex;
