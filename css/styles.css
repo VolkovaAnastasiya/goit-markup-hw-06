@@ -1009,6 +1009,10 @@ textarea:focus {
   margin-left: auto;
 }
 
+.mail-box {
+  display: flex;
+}
+
 .footer-input {
   width: 358px;
   padding: 15px 16px;
